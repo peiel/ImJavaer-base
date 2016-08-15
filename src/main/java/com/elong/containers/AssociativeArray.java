@@ -2,7 +2,7 @@ package com.elong.containers;
 
 /**
  * 创建人 : peierlong
- * 描述 :
+ * 描述 : 用数组实现的简单的Map
  */
 public class AssociativeArray<K, V> {
 
