@@ -1,7 +1,9 @@
 package com.elong.containers;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * 创建人 : peierlong
@@ -37,14 +39,22 @@ public class Maps {
         System.out.println("查看Map是否为空 : " + (map.isEmpty() ? "空" : "非空"));
 
         map.putAll(getMapData());
-        map.keySet().removeAll(map.keySet());
+        boolean b = map.keySet().removeAll(getMapData2());
+
+        System.out.println(b);
+
+        map.remove(5);
+
         System.out.println("map.keySet().removeAll 后 查看Map是否为空 : " + (map.isEmpty() ? "空" : "非空"));
 
     }
 
 
     public static void main(String[] args) {
-        test(new HashMap<Integer, String>());
+//        test(new HashMap<Integer, String>());
+
+
+        test(new SlowMap2<Integer, String>());
     }
 
 
@@ -56,6 +66,14 @@ public class Maps {
         map.put(4, "ddd");
         map.put(5, "eee");
         return map;
+    }
+    public static Set<Integer> getMapData2(){
+        Set<Integer> set = new HashSet<Integer>();
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        set.add(4);
+        return set;
     }
 
 }
