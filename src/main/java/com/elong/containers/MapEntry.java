@@ -38,7 +38,6 @@ public class MapEntry<K, V> implements Map.Entry<K, V> {
     }
 
     public int hashCode() {
-        //TODO 正确覆盖hashcode后再尝试运行Maps.java程序
         return (key == null ? 0 : key.hashCode()) ^ (value == null ? 0 : value.hashCode());
     }
 
