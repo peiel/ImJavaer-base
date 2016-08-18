@@ -2,6 +2,7 @@ package com.elong.io;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 
 /**
  * 创建人 : peierlong
@@ -9,7 +10,7 @@ import java.io.FileReader;
  */
 public class BufferedInputFIle {
 
-    public static String read(String file) throws Exception{
+    public static String read(String file) throws IOException{
         BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
         String s;
         StringBuffer sb = new StringBuffer();
