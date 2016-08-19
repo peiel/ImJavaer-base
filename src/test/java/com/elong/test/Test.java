@@ -1,5 +1,7 @@
 package com.elong.test;
 
+import com.elong.util.TextFile;
+
 import java.io.*;
 import java.util.Collections;
 import java.util.Iterator;
@@ -13,21 +15,9 @@ import java.util.Set;
 public class Test {
 
     public static void main(String[] args) {
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("c://123.txt"));
-            String s;
-            StringBuilder sb = new StringBuilder();
-            while((s = bufferedReader.readLine()) !=null){
-                sb.append(s + " ");
-            }
-            System.out.println(sb);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
+        TextFile.write("123.txt", "123123123\n123123123");
+        String read = TextFile.read("123.txt");
+        System.out.println(read);
     }
 
 }
