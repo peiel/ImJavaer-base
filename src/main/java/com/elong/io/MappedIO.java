@@ -59,7 +59,7 @@ public class MappedIO {
                         intBuffer.put(i);
                         k++;
                     }
-                    System.out.println("i = " + k);
+                    System.out.println("k = " + k);
                     System.out.println(intBuffer.capacity());
                     System.out.println(intBuffer.limit());
                     System.out.println(intBuffer.position());
