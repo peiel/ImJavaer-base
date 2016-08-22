@@ -49,21 +49,40 @@ public class MappedIO {
             new Tester("Mapper Write") {
                 @Override
                 public void test() throws IOException {
-                    FileChannel fileChannel = new RandomAccessFile("two.txt", "rw").getChannel();
+                    FileChannel fileChannel = new RandomAccessFile("one.txt", "rw").getChannel();
                     System.out.println("fileChannel.size() " + fileChannel.size());
-//                    MappedByteBuffer map = fileChannel.map(FileChannel.MapMode.READ_WRITE, 0, fileChannel.size());
                     IntBuffer intBuffer = fileChannel.map(FileChannel.MapMode.READ_WRITE, 0, fileChannel.size()).asIntBuffer();
-                    int k = 0;
                     for (int i = 0; i < numOfInts; i++) {
                         if (!intBuffer.hasRemaining()) continue;
                         intBuffer.put(i);
-                        k++;
                     }
-                    System.out.println("k = " + k);
-                    System.out.println(intBuffer.capacity());
-                    System.out.println(intBuffer.limit());
-                    System.out.println(intBuffer.position());
                     fileChannel.close();
+                }
+            },
+            new Tester("Stream read") {
+                @Override
+                public void test() throws IOException {
+                    DataInputStream in = new DataInputStream(new BufferedInputStream(new FileInputStream(new File("one.txt"))));
+                    for (int i = 0; i < numOfInts; i++) {
+                        try {
+                            in.readInt();
+                        } catch (IOException e) {
+                            break;
+                        }
+                    }
+                    in.close();
+                }
+            },
+            new Tester("Mapper Read") {
+                @Override
+                public void test() throws IOException {
+                    FileChannel fc = new FileInputStream(new File("one.txt")).getChannel();
+                    IntBuffer intBuffer = fc.map(FileChannel.MapMode.READ_ONLY, 0, fc.size()).asIntBuffer();
+                    for (int i = 0; i < numOfInts; i++) {
+                        if (!intBuffer.hasRemaining()) continue;
+                        intBuffer.get();
+                    }
+                    fc.close();
                 }
             }
     };
