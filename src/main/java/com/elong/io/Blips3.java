@@ -4,7 +4,7 @@ import java.io.*;
 
 /**
  * 创建人 : peierlong
- * 描述 :
+ * 描述 : 验证writeExternal 和 readExternal 方法
  */
 public class Blips3 implements Externalizable {
 

@@ -1,12 +1,17 @@
 package com.elong.test;
 
 import com.elong.util.TextFile;
+import sun.nio.ch.FileLockImpl;
 
 import java.io.*;
+import java.nio.channels.FileChannel;
+import java.nio.channels.FileLock;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+
+import static javafx.scene.input.KeyCode.F;
 
 /**
  * 创建人 : peierlong
