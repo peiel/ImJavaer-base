@@ -1,5 +1,7 @@
 package com.elong.concurrency;
 
+import com.elong.util.DaemonThreadFactory;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * 描述 :
  */
 public class DaemonFromFactory implements Runnable {
-    @Override
+
     public void run() {
         try {
             while (true){
