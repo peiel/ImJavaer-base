@@ -4,15 +4,19 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 创建人 : peierlong
- * 描述 : FixedThreadPool使用有限的线程级来执行所提交的任务
+ * 包名: com.elong.concurrency
+ * 创建人 : Elong
+ * 时间: 16/9/5 下午2:08
+ * 描述 : SingleThreadExecutor
  */
-public class FixedThreadPool {
+public class SingleThreadExecutor {
+
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newFixedThreadPool(5);
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
         for (int i = 0; i < 5; i++) {
             executorService.execute(new LiftOff());
         }
         executorService.shutdown();
     }
+
 }

@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 
 /**
  * 创建人 : peierlong
- * 描述 :
+ * 描述 : CachedThreadPool 将为每个任务创建一个线程
  */
 public class CachedThreadPool {
     public static void main(String[] args) throws InterruptedException {
