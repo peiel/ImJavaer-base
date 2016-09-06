@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  * 包名: com.elong.util
  * 创建人 : Elong
  * 时间: 16/9/5 下午6:08
- * 描述 :
+ * 描述 : DaemonThreadFactory来创建线程池
  */
 public class DaemonThreadPoolExecutor extends ThreadPoolExecutor {
 

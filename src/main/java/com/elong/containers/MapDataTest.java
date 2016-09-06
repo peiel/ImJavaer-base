@@ -15,7 +15,6 @@ public class MapDataTest {
         //Pair Generator
         System.out.println(MapData.map(new Letters(), 11));
         //Two separate generator
-        //TODO 添加类
     }
 }
 
