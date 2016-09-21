@@ -4,7 +4,7 @@ package com.elong.concurrency.ifeve;
  * 包名: com.elong.concurrency.ifeve
  * 创建人 : Elong
  * 时间: 16/9/20 下午5:40
- * 描述 :
+ * 描述 : 信号量对象
  */
 public class QueueObject {
 

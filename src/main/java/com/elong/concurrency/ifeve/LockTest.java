@@ -4,14 +4,14 @@ package com.elong.concurrency.ifeve;
  * 包名: com.elong.concurrency.ifeve
  * 创建人 : Elong
  * 时间: 16/9/20 下午4:33
- * 描述 :
+ * 描述 : LockTest
  */
 public class LockTest {
     public static void main(String[] args) {
         final Synchronizer synchronizer = new Synchronizer();
 
 
-        Thread t1 = new Thread(){
+        Thread t1 = new Thread() {
             @Override
             public void run() {
                 try {
@@ -23,7 +23,7 @@ public class LockTest {
         };
         t1.start();
 
-        Thread t2 = new Thread(){
+        Thread t2 = new Thread() {
             @Override
             public void run() {
                 try {
@@ -40,17 +40,18 @@ public class LockTest {
 }
 
 
-
-class Synchronizer{
+class Synchronizer {
     FairLock lock = new FairLock();
+
     public void doSynchronized() throws InterruptedException {
         this.lock.lock();
         try {
+            System.out.println(Thread.currentThread().getName() + " is run!");
             Thread.sleep(3000);
+            System.out.println("-----------------");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println(Thread.currentThread().getName() + " is run!");
         this.lock.unlock();
     }
 }
