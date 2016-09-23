@@ -27,7 +27,7 @@ public class ReadWriteLock {
     }
 
     private boolean canGrantReadAccess(Thread callingThread) {
-        if (isWriter(callingThread)) return true;  //如果callingThread==writingThread 返回true
+        if (isWriter(callingThread)) return true;  //写锁可降级为读锁
         if (hasWriter()) return false;
         if (isReader(callingThread)) return true;
         if (hasWriteRequests()) return false;
@@ -82,7 +82,7 @@ public class ReadWriteLock {
     private int getReadAccessCount(Thread callingThread) {
         Integer accessCount = readingThreads.get(callingThread);
         if (accessCount == null) return 0;
-        return accessCount.intValue();
+        return accessCount;
     }
 
 
