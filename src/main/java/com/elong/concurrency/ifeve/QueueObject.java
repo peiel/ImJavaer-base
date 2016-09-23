@@ -29,5 +29,20 @@ public class QueueObject {
         return this == o;
     }
 
+
+    public static int getInteger(){
+
+        try{
+            return 1;
+        }finally {
+            System.out.println("执行finally");
+        }
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getInteger());
+    }
+
 }
 
