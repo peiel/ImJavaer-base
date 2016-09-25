@@ -1,5 +1,7 @@
 package com.elong.test;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.elong.util.TextFile;
 
 import java.util.concurrent.TimeUnit;
@@ -25,14 +27,20 @@ public class Test {
 //
 
 
-        System.out.println(Thread.currentThread().getName());
+        /*System.out.println(Thread.currentThread().getName());
         for (int i = 0; i < 10; i++) {
             new Thread("" + i) {
                 public void run() {
                     System.out.println("Thread: " + Thread.currentThread().getName() + "running");
                 }
             }.start();
-        }
+        }*/
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("money", "0");
+
+        System.out.println(jsonObject);
+
 
     }
 
