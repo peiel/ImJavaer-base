@@ -6,7 +6,4 @@
 |com.elong.design.patterns
 ​	|___Singleton.java 	//单例模式DEMO
 
-​		
-
-
 
