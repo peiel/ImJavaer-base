@@ -5,5 +5,7 @@
 ####设计模式
     |com.elong.design.patterns
         |___Singleton.java 	//单例模式DEMO
-
+####注解
+    |com.elong.annotations
+        |___Test.java       //The Test Target
 
