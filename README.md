@@ -4,6 +4,6 @@
 #### 项目结构及内容简介
 
 |com.elong.design.patterns
-​	|___Singleton.java 	//单例模式DEMO
+  |___Singleton.java 	//单例模式DEMO
 
 
