@@ -1,10 +1,12 @@
 # ImJavaer
 本项目存放自己平时敲的示例代码，对一些基础知识的理解与认识，并会在`README.md`中记录，以便自己忘了的时候回来看。
 
-##关于死锁的理解
-> 死锁是两个或更多线程阻塞着等待其它处于死锁状态的线程所持有的锁。死锁通常发生在多个线程同时但以不同的顺序请求同一组锁的时候。
-####代码信息
-代码存放位置：com.elong.concurrency.ifeve
-类名:TreeNode.java
-####知识点的理解
-执行main方法，线程`t1`和线程`t2`同时启动，线程`t1`调用同步方法addChild(),取得parent对象的锁，并且在addChild()方法中尝试获取child对象的锁，同时线程`t2`调用setParent()方法，取得child对象的锁，并且在setParent()方法中尝试获取parent对象的锁，在某种情况下，由于`t2`拿着child对象的锁，所以`t1`一直处于阻塞状态，而`t1`拿着parent对象的锁，`t2`也会处于阻塞状态，就会导致死锁。
+#### 项目结构及内容简介
+
+|com.elong.design.patterns
+​	|___Singleton.java 	//单例模式DEMO
+
+​		
+
+
+
