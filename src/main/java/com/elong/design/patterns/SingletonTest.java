@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * 时间: 2016/11/24 下午4:51
  * 描述 : 单例模式DEMO
  */
-public class Singleton {
+public class SingletonTest {
 
     public static void main(String[] args) {
         SingletonObject firstObj = SingletonObject.getInstance();
@@ -48,42 +48,6 @@ public class Singleton {
             e.printStackTrace();
         }
 
-    }
-
-}
-
-class SingletonObject implements Serializable{
-
-    private static SingletonObject singletonObject = null;
-    private String objName;
-
-    private SingletonObject() {
-        if (singletonObject != null)
-            throw new IllegalArgumentException("单例模式不能创建新的实例了");
-    }
-
-    /*
-     * 命名规范:  getInstance返回唯一实例,  newInstance返回不通实例
-     */
-    static SingletonObject getInstance() {
-        if (singletonObject == null)
-            singletonObject = new SingletonObject();
-        return singletonObject;
-    }
-
-    String getObjName() {
-        return objName;
-    }
-
-    void setObjName(String objName) {
-        this.objName = objName;
-    }
-
-    /**
-     * 此方法保证在反序列化的时候保持单例
-     */
-    private Object readResolve(){
-        return singletonObject;
     }
 
 }
