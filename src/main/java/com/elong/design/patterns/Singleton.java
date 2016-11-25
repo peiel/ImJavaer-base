@@ -35,6 +35,9 @@ class SingletonObject {
 
     private SingletonObject() {}
 
+    /*
+     * 命名规范:  getInstance返回唯一实例,  newInstance返回不通实例
+     */
     static SingletonObject getInstance() {
         if (singletonObject == null)
             singletonObject = new SingletonObject();
