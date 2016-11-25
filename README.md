@@ -7,7 +7,7 @@
         |Singleton.java
         |-----------------  //单例模式DEMO
 ####注解
-    |com.elong.annotations
+    |com.elong.thinking.annotations
         |Test.java
         |-----------------  //The Test Target
 ####Effective Java
@@ -16,3 +16,5 @@
         |Provider.java
         |Services.java
         |-----------------  //服务提供者框架 DEMO
+        |Student.java
+        |-----------------  //Builder模式Demo
