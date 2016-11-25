@@ -5,7 +5,7 @@
 ####设计模式
     |com.elong.design.patterns
         |Singleton.java
-        |-----------------  //单例模式DEMO
+        |-----------------  //单例模式
 ####注解
     |com.elong.thinking.annotations
         |Test.java
@@ -15,6 +15,6 @@
         |Service.java
         |Provider.java
         |Services.java
-        |-----------------  //服务提供者框架 DEMO
+        |-----------------  //服务提供者框架
         |Student.java
-        |-----------------  //Builder模式Demo
+        |-----------------  //Builder模式
