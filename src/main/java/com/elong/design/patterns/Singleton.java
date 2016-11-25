@@ -1,5 +1,6 @@
 package com.elong.design.patterns;
 
+import java.io.Serializable;
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Constructor;
 import java.util.concurrent.TimeUnit;
@@ -51,7 +52,7 @@ public class Singleton {
 
 }
 
-class SingletonObject {
+class SingletonObject implements Serializable{
 
     private static SingletonObject singletonObject = null;
     private String objName;
@@ -76,6 +77,13 @@ class SingletonObject {
 
     void setObjName(String objName) {
         this.objName = objName;
+    }
+
+    /**
+     * 此方法保证在反序列化的时候保持单例
+     */
+    private Object readResolve(){
+        return singletonObject;
     }
 
 }
