@@ -4,8 +4,15 @@
 ## 项目结构及内容简介
 ####设计模式
     |com.elong.design.patterns
-        |___Singleton.java 	//单例模式DEMO
+        |Singleton.java
+        |-----------------  //单例模式DEMO
 ####注解
     |com.elong.annotations
-        |___Test.java       //The Test Target
-
+        |Test.java
+        |-----------------  //The Test Target
+####Effective Java
+    |com.elong.effective
+        |Service.java
+        |Provider.java
+        |Services.java
+        |-----------------  //服务提供者框架 DEMO
