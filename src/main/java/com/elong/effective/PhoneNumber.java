@@ -1,5 +1,6 @@
 package com.elong.effective;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,6 +41,16 @@ public class PhoneNumber {
         }
         PhoneNumber pn = (PhoneNumber) obj;
         return pn.areaCode == areaCode && pn.prefix == prefix && pn.lineNumber == lineNumber;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + areaCode;
+        result = 31 * result + prefix;
+        result = 31 * result + lineNumber;
+        System.out.println(result);
+        return result;
     }
 
     public static void main(String[] args) {
