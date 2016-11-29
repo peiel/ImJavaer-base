@@ -1,6 +1,5 @@
 package com.elong.effective;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -49,7 +48,6 @@ public class PhoneNumber {
         result = 31 * result + areaCode;
         result = 31 * result + prefix;
         result = 31 * result + lineNumber;
-        System.out.println(result);
         return result;
     }
 
