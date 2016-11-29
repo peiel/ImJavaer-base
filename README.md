@@ -18,3 +18,5 @@
         |-----------------  //服务提供者框架
         |Student.java
         |-----------------  //Builder模式
+        |PhoneNumber.java
+        |-----------------  //重写equals, 如果不重写hashCode的后果
