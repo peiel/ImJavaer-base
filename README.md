@@ -22,3 +22,6 @@
         |-----------------  //覆盖equals的同时要覆盖hashCode
         |Complex.java
         |-----------------  //不可变类的示例
+        |Figure.java
+        |FigureTrue.java
+        |-----------------  //类层次优于标签类
