@@ -44,8 +44,7 @@ public enum Operation {
 
     abstract double apply(double x, double y);
 
-    @Test
-    public void testOperation() {
+    public static void main(String[] args) {
         double x = 2;
         double y = 4;
         for (Operation op : values()) {
