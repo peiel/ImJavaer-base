@@ -25,3 +25,5 @@
         |Figure.java
         |FigureTrue.java
         |-----------------  //类层次优于标签类
+        |Favorites.java
+        |-----------------  //类型安全的异构容器的实现
