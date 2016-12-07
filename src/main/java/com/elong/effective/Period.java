@@ -19,6 +19,10 @@ public class Period {
      * @throws IllegalArgumentException if the start after the end
      */
     public Period(Date start, Date end) {
+        //解决方案, 使用保护性拷贝, 不持有可变实例的引用
+//        this.start = new Date(start.getTime());
+//        this.end = new Date(end.getTime());
+
         if (start.compareTo(end) > 0) {
             throw new IllegalArgumentException(start + " after " + end);
         }
@@ -27,10 +31,13 @@ public class Period {
     }
 
     public Date start() {
+        //解决方案
+//        return new Date(start.getTime());
         return start;
     }
 
     public Date end() {
+//        return new Date(end.getTime());
         return end;
     }
 
