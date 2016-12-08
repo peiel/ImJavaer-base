@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
  * 时间: 16/9/19 下午3:27
  * 描述 : 测试notify和wait的执行流程
  */
-public class MyWaitNotity {
+public class MyWaitNotify {
 
     MonitorObject myMonitorObject = new MonitorObject();
 
@@ -36,7 +36,7 @@ public class MyWaitNotity {
     }
 
     public static void main(String[] args) {
-        final MyWaitNotity myWaitNotity = new MyWaitNotity();
+        final MyWaitNotify myWaitNotity = new MyWaitNotify();
         Thread one = new Thread("one"){
             @Override
             public void run() {

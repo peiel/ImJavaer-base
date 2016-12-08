@@ -1,12 +1,17 @@
 # ImJavaer
-本项目存放自己平时敲的示例代码，对一些基础知识的理解与认识，并会在`README.md`中记录，以便自己忘了的时候回来看。
+本项目存放自己平时敲的示例代码，对一些基础知识的理解与认识，并会在`README.md`中记录，以便自己忘了的时候回来看。每个类中都有测试代码，直接运行可查看效果。
+
+- JDK使用版本: 1.7
+- 构建工具: Maven
 
 ## 项目结构及内容简介
 ####设计模式
     |com.elong.design.patterns
         |Singleton.java
         |-----------------  //单例模式
-####注解
+####Thinking in Java
+    |##注解##
+    |=====================
     |com.elong.thinking.annotations
         |Test.java
         |-----------------  //The Test Target
@@ -41,3 +46,25 @@
         |ForwardingSet.java
         |ObservableSet.java
         |-----------------  //避免过度同步(观察者模式)
+####ifeve.com
+    |com.elong.ifeve
+        |BlockingQueue.java
+        |-----------------  //一个阻塞队列的简单实现
+        |CASDemo.java
+        |-----------------  //原子包boolean原子性示例
+        |FairLock.java
+        |-----------------  //公平锁的实现
+        |Lock.java
+        |Synchronizer.java
+        |LockTest.java
+        |-----------------  //锁的实现与测试
+        |MyWaitNotify.java
+        |-----------------  //测试notify和wait的执行流程
+        |QueueObject.java
+        |-----------------  //信号量对象
+        |ReadWriteLock.java
+        |-----------------  //可重入的读写锁
+        |ThreadLocalTest.java
+        |-----------------  //ThreadLocalTest
+        |死锁的演示.java
+        |-----------------  //死锁示例
