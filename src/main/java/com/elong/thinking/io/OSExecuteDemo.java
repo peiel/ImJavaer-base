@@ -1,6 +1,6 @@
 package com.elong.thinking.io;
 
-import com.elong.util.OSExecute;
+import com.elong.thinking.util.OSExecute;
 
 /**
  * 创建人 : peierlong

@@ -1,6 +1,6 @@
 package com.elong.thinking.concurrency;
 
-import com.elong.util.DaemonThreadFactory;
+import com.elong.thinking.util.DaemonThreadFactory;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

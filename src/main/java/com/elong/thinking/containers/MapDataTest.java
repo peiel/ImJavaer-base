@@ -1,8 +1,8 @@
 package com.elong.thinking.containers;
 
-import com.elong.util.Generator;
-import com.elong.util.MapData;
-import com.elong.util.Pair;
+import com.elong.thinking.util.Generator;
+import com.elong.thinking.util.MapData;
+import com.elong.thinking.util.Pair;
 
 import java.util.Iterator;
 

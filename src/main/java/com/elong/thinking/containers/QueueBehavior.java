@@ -1,6 +1,6 @@
 package com.elong.thinking.containers;
 
-import com.elong.util.Generator;
+import com.elong.thinking.util.Generator;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

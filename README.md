@@ -7,14 +7,9 @@
 ## 项目结构及内容简介
 ####设计模式
     |com.elong.design.patterns
-        |Singleton.java
+        |EnumSingleton.java
+        |SingletonObject.java
         |-----------------  //单例模式
-####Thinking in Java
-    |##注解##
-    |=====================
-    |com.elong.thinking.annotations
-        |Test.java
-        |-----------------  //The Test Target
 ####Effective Java
     |com.elong.effective
         |Service.java
@@ -68,3 +63,16 @@
         |-----------------  //ThreadLocalTest
         |死锁的演示.java
         |-----------------  //死锁示例
+####Thinking in Java
+    |com.elong.thinking.annotations
+    |-----------------  //注解
+    |com.elong.thinking.concurrency
+    |-----------------  //并发
+    |com.elong.thinking.containers
+    |-----------------  //容器
+    |com.elong.thinking.enumerated
+    |-----------------  //枚举
+    |com.elong.thinking.io
+    |-----------------  //IO
+    |com.elong.thinking.util
+    |-----------------  //工具类

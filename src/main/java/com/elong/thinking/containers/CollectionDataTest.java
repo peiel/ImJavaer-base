@@ -1,7 +1,7 @@
 package com.elong.thinking.containers;
 
-import com.elong.util.CollectionData;
-import com.elong.util.Generator;
+import com.elong.thinking.util.CollectionData;
+import com.elong.thinking.util.Generator;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

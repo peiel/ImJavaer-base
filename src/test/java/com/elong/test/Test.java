@@ -1,10 +1,6 @@
 package com.elong.test;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.elong.util.TextFile;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * 创建人 : peierlong
