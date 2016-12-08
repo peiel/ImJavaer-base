@@ -37,3 +37,7 @@
         |-----------------  //必要时进行保护性拷贝
         |ReflectiveTest.java
         |-----------------  //使用反射类获取对象的实例
+        |SetObserver.java
+        |ForwardingSet.java
+        |ObservableSet.java
+        |-----------------  //避免过度同步(观察者模式)
