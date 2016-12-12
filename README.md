@@ -76,3 +76,7 @@
     |-----------------  //IO
     |com.elong.thinking.util
     |-----------------  //工具类
+####Core Java
+    |com.elong.core.volume.one
+        |ReflectionTest.java
+        |-----------------  //反射测试类, 返回某个类的信息
