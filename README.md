@@ -85,3 +85,5 @@
         |TraceHandler.java
         |ProxyTest.java
         |-----------------  //使用代理查看二分查找算法过程
+        |DateInterval.java
+        |-----------------  //泛型方法的擦除
