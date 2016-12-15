@@ -5,11 +5,18 @@
 - 构建工具: Maven
 
 ## 项目结构及内容简介
-####设计模式
+####设计模式模块
     |com.elong.design.patterns
         |EnumSingleton.java
         |SingletonObject.java
         |-----------------  //单例模式
+####并发编程模块
+    |com.elong.concurrency
+        |UnsafeSequence.java
+        |-----------------  //非线程安全的数值生成器
+        |Sequence.java
+        |-----------------  //线程安全的数值生成器
+
 ####Effective Java
     |com.elong.effective
         |Service.java
