@@ -16,6 +16,8 @@
         |-----------------  //非线程安全的数值生成器
         |Sequence.java
         |-----------------  //线程安全的数值生成器
+        |NoVisibility.java
+        |-----------------  //在没有同步的情况下共享变量
 
 ####Effective Java
     |com.elong.effective
