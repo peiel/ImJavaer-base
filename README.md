@@ -18,6 +18,8 @@
         |-----------------  //线程安全的数值生成器
         |NoVisibility.java
         |-----------------  //在没有同步的情况下共享变量
+        |OneValueCache.java
+        |-----------------  //对数值及其因数分解结果进行缓存的不可变容器类
 
 ####Effective Java
     |com.elong.effective
