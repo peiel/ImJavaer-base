@@ -22,6 +22,8 @@
         |-----------------  //对数值及其因数分解结果进行缓存的不可变容器类
         |PersonSet.java
         |-----------------  //通过实例封闭和加锁机制使一个类成为线程安全的(类的状态变量并不是线程安全的)
+        |TestHarness.java
+        |-----------------  //闭锁: 使用CountDownLatch类启动和停止线程
 
 ####Effective Java
     |com.elong.effective
