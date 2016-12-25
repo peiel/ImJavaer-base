@@ -87,6 +87,9 @@
     |-----------------  //容器
     |com.elong.thinking.enumerated
     |-----------------  //枚举
+        |HourlyEmployee.java
+        |Sex.java
+        |----------------- //使用枚举来取代普通的定义常量方式
     |com.elong.thinking.io
     |-----------------  //IO
     |com.elong.thinking.util
