@@ -32,8 +32,8 @@ public class BoundedHashSet<T> {
         }
     }
 
-    public boolean remove(Object o) {
-        boolean isRemove = set.remove(o);
+    public boolean remove(T t) {
+        boolean isRemove = set.remove(t);
         if (isRemove) semaphore.release();
         return isRemove;
     }
