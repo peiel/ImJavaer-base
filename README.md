@@ -24,7 +24,8 @@
         |-----------------  //通过实例封闭和加锁机制使一个类成为线程安全的(类的状态变量并不是线程安全的)
         |TestHarness.java
         |-----------------  //闭锁: 使用CountDownLatch类启动和停止线程
-
+        |BoundedHashSet.java
+        |-----------------  //使用Semaphore为容器设置边界
 ####Effective Java
     |com.elong.effective
         |Service.java
@@ -42,7 +43,7 @@
         |-----------------  //类层次优于标签类
         |Favorites.java
         |-----------------  //类型安全的异构容器的实现
-        |AnnotatedElement.java
+        |AnnotatedElement.java``````
         |-----------------  /使用asSubclass方法在编译时读取类型未知的注解
         |Operation.java
         |-----------------  //利用枚举类型来实现特定运算
