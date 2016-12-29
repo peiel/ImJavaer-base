@@ -28,6 +28,8 @@
         |-----------------  //同步工具类: 使用Semaphore为容器设置边界
         |barrierTest.java
         |-----------------  //同步工具类: CyclicBarrier
+        |custom.cache.*
+        |-----------------  //构建高效的、可伸缩的结果缓存
         
 ####Effective Java
     |com.elong.effective
