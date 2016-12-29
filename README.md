@@ -23,9 +23,12 @@
         |PersonSet.java
         |-----------------  //通过实例封闭和加锁机制使一个类成为线程安全的(类的状态变量并不是线程安全的)
         |TestHarness.java
-        |-----------------  //闭锁: 使用CountDownLatch类启动和停止线程
+        |-----------------  //同步工具类: 闭锁: 使用CountDownLatch类启动和停止线程
         |BoundedHashSet.java
-        |-----------------  //使用Semaphore为容器设置边界
+        |-----------------  //同步工具类: 使用Semaphore为容器设置边界
+        |barrierTest.java
+        |-----------------  //同步工具类: CyclicBarrier
+        
 ####Effective Java
     |com.elong.effective
         |Service.java
