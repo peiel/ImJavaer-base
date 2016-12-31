@@ -30,6 +30,8 @@
         |-----------------  //同步工具类: CyclicBarrier
         |custom.cache.*
         |-----------------  //构建高效的、可伸缩的结果缓存
+        |BrokenPrimeProducer.java
+        |-----------------  //素数阻塞队列示例
         
 ####Effective Java
     |com.elong.effective
