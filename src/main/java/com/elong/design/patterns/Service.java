@@ -1,4 +1,4 @@
-package com.elong.effective;
+package com.elong.design.patterns;
 
 /**
  * 服务提供者框架 DEMO

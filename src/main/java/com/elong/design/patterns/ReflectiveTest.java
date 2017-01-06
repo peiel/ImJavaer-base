@@ -1,4 +1,4 @@
-package com.elong.effective;
+package com.elong.design.patterns;
 
 import java.util.Arrays;
 import java.util.Set;

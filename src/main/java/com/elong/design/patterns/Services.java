@@ -1,4 +1,4 @@
-package com.elong.effective;
+package com.elong.design.patterns;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

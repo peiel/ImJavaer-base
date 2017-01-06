@@ -1,4 +1,4 @@
-package com.elong.effective;
+package com.elong.design.patterns;
 
 /**
  * 包名: com.elong.effective
