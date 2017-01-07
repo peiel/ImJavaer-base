@@ -18,6 +18,8 @@
         |-----------------  //LiftOff任务
         |BasicThreads.java
         |-----------------  //测试-启动5个线程来运行LiftOff任务
+        |SynchronizedExample.java
+        |-----------------  //SynchronizedExample
         
 ####Containers
     |com.peierlong.containers   //容器

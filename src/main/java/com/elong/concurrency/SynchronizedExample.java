@@ -4,7 +4,7 @@ package com.elong.concurrency;
  * 包名: com.elong.concurrency
  * 创建人 : Elong
  * 时间: 16/9/9 下午6:53
- * 描述 :
+ * 描述 : SynchronizedExample
  */
 public class SynchronizedExample {
     public static void main(String[] args){
