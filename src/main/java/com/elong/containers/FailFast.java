@@ -1,5 +1,7 @@
 package com.elong.containers;
 
+import org.junit.Test;
+
 import java.util.*;
 
 /**
@@ -8,7 +10,9 @@ import java.util.*;
  *       在获取迭代器后再次进行操作会出现此异常
  */
 public class FailFast {
-    public static void main1(String[] args) {
+
+    @Test
+    public void failFast_1() {
         List<String> list = new ArrayList<String>();
         list.add("a");
         Iterator<String> iterator = list.iterator();
@@ -19,7 +23,8 @@ public class FailFast {
         }
     }
 
-    public static void main(String[] args) {
+    @Test
+    public void failFast_2() {
         Map<Integer, String> map = new HashMap<Integer, String>();
         map.put(1, "aaa");
         map.put(2, "bbb");
