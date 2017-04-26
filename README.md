@@ -53,3 +53,5 @@
     |com.peierlong.util   //工具类
         |CollectionData.java
         |-----------------  //构建一个类，它的构造器接收Generator和quantity数值
+        |ImgUtil.java
+        |-----------------  //图片工具类
