@@ -12,7 +12,7 @@ import java.util.List;
 public class FilledListMaker<T> {
 
     List<T> create(T t, int n) {
-        List<T> result = new ArrayList<>();
+        List<T> result = new ArrayList<T>();
         for (int i = 0; i < n; i++) {
             result.add(t);
         }
@@ -20,7 +20,7 @@ public class FilledListMaker<T> {
     }
 
     public static void main(String[] args) {
-        FilledListMaker<String> maker = new FilledListMaker<>();
+        FilledListMaker<String> maker = new FilledListMaker<String>();
         List<String> fucks = maker.create("fuck", 10);
         System.out.println(fucks);
     }

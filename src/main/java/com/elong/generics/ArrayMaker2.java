@@ -12,12 +12,12 @@ import java.util.List;
 public class ArrayMaker2<T> {
 
     List<T> create(){
-        return new ArrayList<>();
+        return new ArrayList<T>();
     }
 
     public static void main(String[] args) {
 
-        ArrayMaker2<String> arrayMaker2 = new ArrayMaker2<>();
+        ArrayMaker2<String> arrayMaker2 = new ArrayMaker2<String>();
         List<String> strings = arrayMaker2.create();
         System.out.println(strings);
 

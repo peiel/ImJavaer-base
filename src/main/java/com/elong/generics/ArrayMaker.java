@@ -26,7 +26,7 @@ public class ArrayMaker<T extends String> {
      */
     public static void main(String[] args) {
 
-        ArrayMaker<String> stringArrayMaker = new ArrayMaker<>(String.class);
+        ArrayMaker<String> stringArrayMaker = new ArrayMaker<String>(String.class);
 
         String[] strings = stringArrayMaker.create(10);
 
